@@ -51,7 +51,7 @@ MySQL
 
 ---
 
-### 　開発環境
+### 　　開発環境
 Docker
 Docker Compose
 
@@ -59,7 +59,8 @@ Docker Compose
 
 ###   ER図
 
-![ER図](https://raw.githubusercontent.com/ユーザー名/mogitate/main/docs/mogitate.drawio.png)
+![ER図](./docs/mogitate.drawio.png)
+
 
 ---
 
