@@ -26,10 +26,10 @@ docker-compose up -d
 docker-compose exec php composer install
 
 ### 4 環境変数を設定
-# 1. 環境変数ファイルをコピー
+1. 環境変数ファイルをコピー
 cp .env.example .env
 
-# 2. アプリキーを生成
+2. アプリキーを生成
 docker-compose exec php php artisan key:generate
 
 ### 5 マイグレーション & シーディング
