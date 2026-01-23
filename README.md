@@ -21,13 +21,17 @@ git clone https://github.com/ユーザー名/mogitate.git
 cd mogitate
 2. Dockerコンテナを起動
 docker-compose up -d
+
 3. 依存関係をインストール
 docker-compose exec app composer install
+
 4. 環境変数を設定
 cp .env.example .env
 docker-compose exec app php artisan key:generate
+
 5. マイグレーション & シーディング
 docker-compose exec app php artisan migrate --seed
+
 6. ブラウザでアクセス
 http://localhost
 
