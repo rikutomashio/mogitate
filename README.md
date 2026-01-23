@@ -35,7 +35,9 @@ docker-compose exec app php artisan migrate --seed
 ### 6 ブラウザでアクセス
 http://localhost
 
-## 使用技術
+---
+
+### 使用技術
 バックエンド
 PHP 8.x
 Laravel 10.x
@@ -47,15 +49,19 @@ CSS / Bootstrap
 データベース
 MySQL
 
+---
+
 ### 　開発環境
 Docker
 Docker Compose
+
+---
 
 ###   ER図
 
 ![ER図](https://raw.githubusercontent.com/ユーザー名/mogitate/main/docs/mogitate.drawio.png)
 
-
+---
 
 ###  URL
 ローカル環境
