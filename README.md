@@ -33,7 +33,7 @@ docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan migrate --seed
 
 ### 6 ブラウザでアクセス
-http://localhost
+http://localhost/products
 
 ---
 
