@@ -23,7 +23,7 @@ cd mogitate
 docker-compose up -d
 
 ### 3 依存関係をインストール
-docker exec -it mogitate-php-1 composer install
+docker-compose exec php composer install
 
 ### 4 環境変数を設定
 cp .env.example .env
