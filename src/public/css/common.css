@@ -1,0 +1,58 @@
+/* ===========================
+   ヘッダー共通
+=========================== */
+header {
+    background-color: #3498db;
+    /* メインカラー */
+    color: #fff;
+    /* 文字色 */
+    padding: 20px 30px;
+    /* 上下左右の余白 */
+    border-radius: 0 0 10px 10px;
+    /* 下角を丸める */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* 軽い影 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* タイトルと右側要素を両端配置 */
+}
+
+/* ページタイトル */
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ヘッダー内のリンク・ボタンなど */
+header a,
+header button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #2980b9;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+}
+
+header a:hover,
+header button:hover {
+    background-color: #1f6391;
+}
+
+/* レスポンシブ対応（スマホ） */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}

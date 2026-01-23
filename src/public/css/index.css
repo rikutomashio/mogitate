@@ -1,0 +1,99 @@
+/* ===========================
+   商品一覧画面（index）
+=========================== */
+
+/* ページタイトル */
+.page-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 検索・並び替えフォーム */
+.search-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"],
+.search-form select {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+/* 商品一覧レイアウト */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* 商品カード */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 商品画像 */
+.product-image {
+    margin-bottom: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* 画像なし */
+.no-image {
+    display: block;
+    text-align: center;
+    color: #999;
+    background: #f5f5f5;
+    padding: 60px 0;
+    border-radius: 6px;
+}
+
+/* 商品情報 */
+.product-info h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.product-info a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-info a:hover {
+    text-decoration: underline;
+}
+
+/* 価格 */
+.price {
+    font-weight: bold;
+}
+
+/* ページネーション */
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+

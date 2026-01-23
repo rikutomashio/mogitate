@@ -1,0 +1,118 @@
+/* ===========================
+   商品登録画面（create）
+=========================== */
+
+/* ページタイトル */
+.page-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* フォーム全体 */
+.product-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 各入力ブロック */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* ラベル */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* input / textarea */
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* textarea */
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* チェックボックス */
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+}
+
+/* エラーメッセージ */
+.error {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* ボタンエリア */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* 戻るボタン */
+.btn-back {
+    background: #bdc3c7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background: #aab0b3;
+}
+
+/* 登録ボタン */
+.btn-submit {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #2980b9;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .product-form {
+        padding: 20px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-back,
+    .btn-submit {
+        width: 100%;
+    }
+}
