@@ -27,7 +27,7 @@ docker-compose exec php composer install
 
 ### 4 環境変数を設定
 cp .env.example .env
-docker-compose exec app php artisan key:generate
+docker-compose exec php php artisan key:generate
 
 ### 5 マイグレーション & シーディング
 docker-compose exec app php artisan migrate --seed
