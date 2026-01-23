@@ -16,23 +16,23 @@
 ## 🚀 環境構築
 
 ### 1. リポジトリをクローン
-```bash
 git clone https://github.com/ユーザー名/mogitate.git
 cd mogitate
-2. Dockerコンテナを起動
+
+### 2.Dockerコンテナを起動
 docker-compose up -d
 
-3. 依存関係をインストール
+### 3 依存関係をインストール
 docker-compose exec app composer install
 
-4. 環境変数を設定
+### 4 環境変数を設定
 cp .env.example .env
 docker-compose exec app php artisan key:generate
 
-5. マイグレーション & シーディング
+### 5 マイグレーション & シーディング
 docker-compose exec app php artisan migrate --seed
 
-6. ブラウザでアクセス
+### 6 ブラウザでアクセス
 http://localhost
 
 ## 使用技術
@@ -47,17 +47,17 @@ CSS / Bootstrap
 データベース
 MySQL
 
-##　開発環境
+### 　開発環境
 Docker
 Docker Compose
 
-##  ER図
+###   ER図
 
 ![ER図](https://raw.githubusercontent.com/ユーザー名/mogitate/main/docs/mogitate.drawio.png)
 
 
 
-## URL
+###  URL
 ローカル環境
 
 http://localhost/products
