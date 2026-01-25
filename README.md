@@ -18,7 +18,7 @@
 ### 1. リポジトリをクローン
 
 ```bash
-git clone https://github.com/ユーザー名/mogitate.git
+git clone https://github.com/rikutomashio/mogitate.git
 cd mogitate
 ```
 
