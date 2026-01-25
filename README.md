@@ -92,12 +92,8 @@ http://localhost/products
 
 ![ER図](./docs/mogitate.drawio.png)
 
----
-
 ### URL（ローカル環境）
 
 ・http://localhost/products
 
 ・http://localhost:8080
-
-
