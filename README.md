@@ -16,34 +16,47 @@
 ## 🚀 環境構築
 
 ### 1. リポジトリをクローン
+
+```bash
+
 git clone https://github.com/ユーザー名/mogitate.git
+
 cd mogitate
 
 ### 2.Dockerコンテナを起動
+
+docker-compose build
+
 docker-compose up -d
 
-### 3 依存関係をインストール
+### 3. 依存関係をインストール
+
 docker-compose exec php composer install
 
-### 4 環境変数を設定
-1. 環境変数ファイルをコピー
-(コンテナ内で）cp .env.example .env
+### 4. 環境変数を設定
 
-2. アプリキーを生成
+docker-compose exec php cp .env.example .env
+
 docker-compose exec php php artisan key:generate
 
-### 5 マイグレーション & シーディング
+### 5. マイグレーション & シーディング
+
 docker-compose exec php php artisan migrate --seed
 
-### 6 ブラウザでアクセス
+### 6 シンボリックリンク作成（画像表示用）
+
+docker-compose exec php php artisan storage:link
+
+### 7 ブラウザでアクセス
+
 http://localhost/products
 
 ---
 
 ### 使用技術
 バックエンド
-PHP 8.x
-Laravel 10.x
+PHP 8.4
+Laravel 12
 
 フロントエンド
 Blade
