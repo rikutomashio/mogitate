@@ -90,6 +90,8 @@ http://localhost/products
 
 ### ER図
 
+![ER図](./docs/mogitate.drawio.png)
+
 ---
 
 ### URL（ローカル環境）
